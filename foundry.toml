@@ -30,3 +30,5 @@
   tab_width = 4
   wrap_comments = true
 
+[etherscan]
+optimism = { key = "${API_KEY_OPTIMISTIC_ETHERSCAN}" }

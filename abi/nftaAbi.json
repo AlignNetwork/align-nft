@@ -1,0 +1,315 @@
+{
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        { "name": "_name", "type": "string", "internalType": "string" },
+        { "name": "_symbol", "type": "string", "internalType": "string" },
+        { "name": "_baseURI", "type": "string", "internalType": "string" },
+        { "name": "_treasury", "type": "address", "internalType": "address" },
+        { "name": "_alignIdContract", "type": "address", "internalType": "address" },
+        { "name": "_interactionStation", "type": "address", "internalType": "address" },
+        { "name": "_issuerAlignId", "type": "uint256", "internalType": "uint256" },
+        { "name": "_badgeITypeKey", "type": "bytes32", "internalType": "bytes32" }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "MAX_SUPPLY",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "MINT_PRICE",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "alignIdContract",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "address", "internalType": "contract AlignIdRegistry" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "approve",
+      "inputs": [
+        { "name": "spender", "type": "address", "internalType": "address" },
+        { "name": "id", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "badgeITypeKey",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "bytes32", "internalType": "bytes32" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "balanceOf",
+      "inputs": [{ "name": "owner", "type": "address", "internalType": "address" }],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "baseURI",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "string", "internalType": "string" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "cancelOwnershipHandover",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "payable"
+    },
+    {
+      "type": "function",
+      "name": "completeOwnershipHandover",
+      "inputs": [{ "name": "pendingOwner", "type": "address", "internalType": "address" }],
+      "outputs": [],
+      "stateMutability": "payable"
+    },
+    {
+      "type": "function",
+      "name": "getApproved",
+      "inputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "outputs": [{ "name": "", "type": "address", "internalType": "address" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "interactionStation",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "address", "internalType": "contract InteractionStation" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "isApprovedForAll",
+      "inputs": [
+        { "name": "", "type": "address", "internalType": "address" },
+        { "name": "", "type": "address", "internalType": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "bool", "internalType": "bool" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "issuerAlignId",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    { "type": "function", "name": "mint", "inputs": [], "outputs": [], "stateMutability": "payable" },
+    {
+      "type": "function",
+      "name": "mintedCount",
+      "inputs": [{ "name": "account", "type": "address", "internalType": "address" }],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "name",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "string", "internalType": "string" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "owner",
+      "inputs": [],
+      "outputs": [{ "name": "result", "type": "address", "internalType": "address" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "ownerOf",
+      "inputs": [{ "name": "id", "type": "uint256", "internalType": "uint256" }],
+      "outputs": [{ "name": "owner", "type": "address", "internalType": "address" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "ownershipHandoverExpiresAt",
+      "inputs": [{ "name": "pendingOwner", "type": "address", "internalType": "address" }],
+      "outputs": [{ "name": "result", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    { "type": "function", "name": "renounceOwnership", "inputs": [], "outputs": [], "stateMutability": "payable" },
+    {
+      "type": "function",
+      "name": "requestOwnershipHandover",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "payable"
+    },
+    {
+      "type": "function",
+      "name": "safeTransferFrom",
+      "inputs": [
+        { "name": "from", "type": "address", "internalType": "address" },
+        { "name": "to", "type": "address", "internalType": "address" },
+        { "name": "id", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "safeTransferFrom",
+      "inputs": [
+        { "name": "from", "type": "address", "internalType": "address" },
+        { "name": "to", "type": "address", "internalType": "address" },
+        { "name": "id", "type": "uint256", "internalType": "uint256" },
+        { "name": "data", "type": "bytes", "internalType": "bytes" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "setApprovalForAll",
+      "inputs": [
+        { "name": "operator", "type": "address", "internalType": "address" },
+        { "name": "approved", "type": "bool", "internalType": "bool" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "setBaseURI",
+      "inputs": [{ "name": "newBaseURI", "type": "string", "internalType": "string" }],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "supportsInterface",
+      "inputs": [{ "name": "interfaceId", "type": "bytes4", "internalType": "bytes4" }],
+      "outputs": [{ "name": "", "type": "bool", "internalType": "bool" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "symbol",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "string", "internalType": "string" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "tokenURI",
+      "inputs": [{ "name": "tokenId", "type": "uint256", "internalType": "uint256" }],
+      "outputs": [{ "name": "", "type": "string", "internalType": "string" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "totalSupply",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "transferFrom",
+      "inputs": [
+        { "name": "from", "type": "address", "internalType": "address" },
+        { "name": "to", "type": "address", "internalType": "address" },
+        { "name": "id", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "transferOwnership",
+      "inputs": [{ "name": "newOwner", "type": "address", "internalType": "address" }],
+      "outputs": [],
+      "stateMutability": "payable"
+    },
+    {
+      "type": "function",
+      "name": "treasury",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "address", "internalType": "address" }],
+      "stateMutability": "view"
+    },
+    { "type": "function", "name": "withdraw", "inputs": [], "outputs": [], "stateMutability": "nonpayable" },
+    {
+      "type": "event",
+      "name": "Approval",
+      "inputs": [
+        { "name": "owner", "type": "address", "indexed": true, "internalType": "address" },
+        { "name": "spender", "type": "address", "indexed": true, "internalType": "address" },
+        { "name": "id", "type": "uint256", "indexed": true, "internalType": "uint256" }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "ApprovalForAll",
+      "inputs": [
+        { "name": "owner", "type": "address", "indexed": true, "internalType": "address" },
+        { "name": "operator", "type": "address", "indexed": true, "internalType": "address" },
+        { "name": "approved", "type": "bool", "indexed": false, "internalType": "bool" }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "OwnershipHandoverCanceled",
+      "inputs": [{ "name": "pendingOwner", "type": "address", "indexed": true, "internalType": "address" }],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "OwnershipHandoverRequested",
+      "inputs": [{ "name": "pendingOwner", "type": "address", "indexed": true, "internalType": "address" }],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "OwnershipTransferred",
+      "inputs": [
+        { "name": "oldOwner", "type": "address", "indexed": true, "internalType": "address" },
+        { "name": "newOwner", "type": "address", "indexed": true, "internalType": "address" }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Transfer",
+      "inputs": [
+        { "name": "from", "type": "address", "indexed": true, "internalType": "address" },
+        { "name": "to", "type": "address", "indexed": true, "internalType": "address" },
+        { "name": "id", "type": "uint256", "indexed": true, "internalType": "uint256" }
+      ],
+      "anonymous": false
+    },
+    { "type": "error", "name": "AlreadyInitialized", "inputs": [] },
+    { "type": "error", "name": "MaxSupply", "inputs": [] },
+    { "type": "error", "name": "MintPriceNotPaid", "inputs": [] },
+    { "type": "error", "name": "NewOwnerIsZeroAddress", "inputs": [] },
+    { "type": "error", "name": "NoBadgeMinted", "inputs": [] },
+    { "type": "error", "name": "NoHandoverRequest", "inputs": [] },
+    { "type": "error", "name": "NoMemeCreated", "inputs": [] },
+    { "type": "error", "name": "NoTreasurySet", "inputs": [] },
+    { "type": "error", "name": "NonExistentTokenURI", "inputs": [] },
+    { "type": "error", "name": "Unauthorized", "inputs": [] },
+    { "type": "error", "name": "WithdrawTransfer", "inputs": [] }
+  ]
+}
