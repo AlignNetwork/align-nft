@@ -45,6 +45,9 @@ case $script in
   Mint)
     mint_testnet "Mint.s.sol" $network
     ;;
+  UpdateBaseURI)
+    deploy_script "UpdateBaseURI.s.sol" $network
+    ;;
   *)
     echo "Invalid script name"
     exit 1
